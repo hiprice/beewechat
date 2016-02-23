@@ -56,9 +56,9 @@ func (this *WeChatController) Get() {
 }
 
 func (this *WeChatController) Post() {
-	s := fmt.Sprintf("%s", this.Ctx.Input.CopyBody())
+	//s := fmt.Sprintf("%s", this.Ctx.Input.CopyBody())
 	// log.Println(s)
-	r := wx.ReceiveMsg(s)
+	//r := wx.ReceiveMsg(s)
 	// log.Println(r)
-	this.Ctx.WriteString(r)
+	//this.Ctx.WriteString(r)
 }

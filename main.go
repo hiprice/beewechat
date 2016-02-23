@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
+	_ "github.com/go-sql-driver/mysql"
 	// "github.com/ckeyer/beewechat/models"
 	"github.com/ckeyer/beewechat/conf"
 	_ "github.com/ckeyer/beewechat/routers"

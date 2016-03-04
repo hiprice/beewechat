@@ -2,12 +2,13 @@ package routers
 
 import (
 	"github.com/astaxie/beego"
-	"github.com/ckeyer/beewechat/controllers"
+	"github.com/hiprice/beewechat/controllers"
 )
 
 func init() {
-	beego.Router("/", &controllers.WeChatController{})
-	beego.Router("/home", &controllers.WeChatController{})
+	beego.Router("/", &controllers.MainController{})
+	//beego.Router("/home", &controllers.WeChatController{})
+	beego.Router("/receiver", &controllers.WeChatController{})
 
 	// beego.Router("/test", &controllers.TestController{})
 	// beego.Router("/b", &controllers.BController{})

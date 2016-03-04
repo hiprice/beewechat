@@ -6,7 +6,7 @@ package wechat
 import (
 	"encoding/json"
 	"github.com/astaxie/beego/orm"
-	"github.com/ckeyer/beewechat/models/global"
+	"github.com/hiprice/beewechat/models/global"
 	"io"
 	"log"
 	"strings"
@@ -80,7 +80,8 @@ func (this *WebAccessToken) GetUserInfo() *WebUserInfo {
 
 func (this *WebUserInfo) Insert() error {
 	o := orm.NewOrm()
-
+log.Println(this.Id)
+	log.Println(this.Nickname)
 	id, err := o.Insert(this)
 	if err == nil {
 		this.Id = id

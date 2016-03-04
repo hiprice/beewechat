@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/ckeyer/beewechat/conf"
+	"github.com/hiprice/beewechat/conf"
 )
 
 var (

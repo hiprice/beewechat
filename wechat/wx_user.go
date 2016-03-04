@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/astaxie/beego"
-	"github.com/ckeyer/beewechat/models/global"
+	"github.com/hiprice/beewechat/models/global"
 	"github.com/hoisie/redis"
 	"io"
 	"log"

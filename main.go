@@ -5,9 +5,9 @@ import (
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
 	// "github.com/ckeyer/beewechat/models"
-	"github.com/ckeyer/beewechat/conf"
-	_ "github.com/ckeyer/beewechat/routers"
-	"github.com/ckeyer/beewechat/wechat"
+	"github.com/hiprice/beewechat/conf"
+	_ "github.com/hiprice/beewechat/routers"
+	"github.com/hiprice/beewechat/wechat"
 )
 
 func init() {
@@ -16,7 +16,7 @@ func init() {
 	verbose := false // 打印SQL语句
 	orm.Debug = true
 
-	orm.RegisterDriver("mysql", orm.DR_MySQL)
+	orm.RegisterDriver("mysql", orm.DRMySQL)
 	orm.RegisterDataBase("default", "mysql", config.WX_MYSQL_CONN)
 	wechat.RegDB()
 	orm.RunSyncdb("default", force, verbose)
